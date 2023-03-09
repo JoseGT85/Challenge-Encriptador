@@ -10,12 +10,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400&display=swap" rel="stylesheet">
     <title>Encriptador</title>
 </head>
-<body class="general">
+<body>
+    
     <header>
         <img class="logo" src="/imagenes/Logo-1.jpg" alt="logo de alura" >
     </header>
+    
     <main>
-        <section>
+        <section class="principal">
             <textarea class="text-area" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
             <div>
                 <h6 class="informacion">Solo letras minúsculas y sin acentos</h6>
@@ -25,13 +27,15 @@
                 <button class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
             </div>
         </section>
-        <section>
-            <textarea class="mensaje" cols="20" rows="10"></textarea>
+
+        <section class="aside">
+            <textarea class="mensaje" cols="20" rows="10" disabled></textarea>
             <div>
                 <button class="copiar" onclick="copiar()">Copiar</button>
             </div>
-        </section>
+        </section> 
     </main>
     <script src="script.js"></script>
+
 </body>
 </html>
