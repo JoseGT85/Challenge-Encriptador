@@ -1,18 +1,17 @@
-*{
+* {
     width: 95%;
-    background:lightgrey;
+    background: lightgrey;
     font-family: 'Inter';
     font-weight: 400;
     font-size: 1.5rem;
     line-height: 150%;
-    /*overflow-y: hidden;*/
 }
 
-.body{
+.body {
     display: flex;
     justify-content: center;
     text-align: center;
-} 
+}
 
 .logo {
     padding-top: 1rem;
@@ -20,14 +19,13 @@
     width: 10%;
 }
 
-main{
+main {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     flex-grow: 4;
     margin-bottom: 1rem;
     margin-left: 1rem;
-    
 }
 
 .text-area {
@@ -40,9 +38,9 @@ main{
 }
 
 ::placeholder { color: #0A3871; }
-  .text-area:focus {
-      outline: none;
-    }
+.text-area:focus {
+    outline: none;
+}
 
 .mensaje {
     height: 16rem;
@@ -65,7 +63,7 @@ main{
     outline: none;
 }
 
-.botones{
+.botones {
     display: flex;
     margin-top: 2rem;
 }
@@ -102,7 +100,6 @@ main{
     margin-top: 19.5rem;
     position: absolute;
     width: 12rem;
-    
 }
 
 .informacion {
@@ -110,179 +107,40 @@ main{
     font-size: 1rem;
 }
 
-
-
-@media screen and (max-width:1200px) {
-    
-    *{
-        width: 95%;
-        background:lightgrey;
-        font-family: 'Inter';
-        font-weight: 400;
-        font-size: 1.5rem;
-        line-height: 150%;
-        /*overflow-y: hidden;*/
-    }
-    
-    .body{
-        display: flex;
-        justify-content: center;
-        text-align: center;
-    } 
-    
-    .logo {
-        padding-top: 1rem;
-        margin-left: 1rem;
-        width: 10%;
-    }
-    
-    main{
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        flex-grow: 4;
-        margin-bottom: 1rem;
-        margin-left: 1rem;
-        
-    }
-    
+@media screen and (max-width: 1200px) {
     .text-area {
         height: 8rem;
-        border: none;
-        color: #0A3871;
-        margin-top: 0.5rem;
-        padding: 2px;
-        text-transform: lowercase;
     }
-    
-    ::placeholder { color: #0A3871; }
-      .text-area:focus {
-          outline: none;
-        }
     
     .mensaje {
         height: 12rem;
         width: 10rem;
-        background: darkgrey;
-        background-image: url("/imagenes/Muñeco.png");
-        background-repeat: no-repeat;
-        background-position: center;
-        border: none;
-        border-radius: 2rem;
-        color: #0A3871;
         margin-left: 0.5rem;
-        margin-top: 1rem;
         padding-left: 2rem;
-        position: fixed;
-        display: flex;
-        text-align: start;
-        text-align: start;
     }
-    .mensaje:focus {
-        outline: none;
-    }
-    
-    .botones{
-        display: flex;
-        margin-top: 2rem;
-    }
-    
+
     .btn-desencriptar {
-        background: #D8DFE8;
-        border: 1px solid #0A3871;
-        border-radius: 2rem;
-        color: #0A3871;
-        cursor: pointer;
-        height: 2.5rem;
         margin-left: 2rem;
-        width: 12rem;
     }
-    
-    .btn-encriptar {
-        background-color: #0A3871;
-        border: 1px solid #0A3871;
-        border-radius: 2rem;
-        color: white;
-        cursor: pointer;
-        height: 2.5rem;
-        width: 12rem;
-    }
-    
+
     .copiar {
-        background-color: #0A3871;
-        border: 1px solid #0A3871;
-        border-radius: 2rem;
-        color: white;
-        cursor: pointer;
-        height: 2.5;
         margin-left: 0.5rem;
         margin-top: 15.5rem;
-        position: absolute;
-        width: 12rem;
-        
-    }
-    
-    .informacion {
-        color: #495057;
-        font-size: 1rem;
     }
 }
-@media screen and (max-width:720px){
-   
-    .principal {
-        
-        margin-left: 1rem;
-        flex-wrap: wrap;
-        
-    }
-    .text-area{
-        width: 15rem;
-        height: 15rem;
-        text-align: center ;
-        margin-left: 2rem;
-        margin-top: 1rem;
-    }
 
-    .informacion {
-        font-size: 0.7rem;
-    }
-
-
-    .botones{
-        display: flex;
+@media screen and (max-width: 720px) {
+    main {
         flex-direction: column;
-        width: 80%;
-        align-items: center;
     }
 
-    .copiar{
-        display: flex;
-        margin-left: 4rem;
-        padding: 1rem;
-        border-radius: 2rem;
-        align-items: center;
-        margin-top: 1rem;
-    }
-
-    .aside {
-        height: 2rem;
-        display: flex;
-        margin-left: 1rem;
-        align-items: center;
-        flex-wrap: wrap;
-    }
-    .mensaje{
-        height: 15rem;
-        width: 50rem;
-        margin-top: 1rem;
-        margin-left: 2rem;
-        margin-right: 2rem;
+    .mensaje {
         position: static;
-        display: flex;
-        text-align: start;
-        align-items: center;
-        background-color: #D8DFE8;
+        margin-top: 1rem;
     }
- 
-}
     
+    .botones {
+        flex-direction: column;
+        align-items: center;
+    }
+}
